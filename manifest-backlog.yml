@@ -6,6 +6,6 @@ applications:
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://allocations-pal-bm.apps.evans.pal.pivotal.io/registration
+    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-bm.apps.evans.pal.pivotal.io/registration
   services:
   - tracker-backlog-database
