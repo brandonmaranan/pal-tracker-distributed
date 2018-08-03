@@ -12,11 +12,12 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class RestConfig {
 
-    @LoadBalanced
-    @Bean
-    public RestOperations restOperations() {
-        return new RestTemplate();
-    }
+//
+// @LoadBalanced
+//    @Bean
+//    public RestOperations restOperations() {
+//        return new RestTemplate();
+//    } //moved to each application
 
     @Bean
     public ObjectMapper objectMapper() {
@@ -25,5 +26,3 @@ public class RestConfig {
         return mapper;
     }
 }
-
-//org.springframework.cloud:spring-cloud-commons:1.3.0.RELEASE
